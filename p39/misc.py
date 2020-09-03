@@ -21,7 +21,7 @@ async def main():
         asyncio.to_thread(sleep, datetime.timedelta(minutes=45)),
         asyncio.to_thread(sleep, datetime.timedelta(seconds=4)),
         asyncio.to_thread(sleep, datetime.timedelta(seconds=10)),
-        asyncio.to_thread(sleep, datetime.timedelta(seconds=2)),
+        asyncio.to_thread(sleep, length=datetime.timedelta(seconds=2)),
     )
 
 
